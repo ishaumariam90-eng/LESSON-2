@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LESSON 2</title>
-</head>
-<body>
-    <div>
-        <h1>Chat Room</h1>
-        <div>
-            <div>
-                <span><b>Ibrahim:</b></span>
-                <span>Assalamualaikum warahmatullah wabarakatuhu</span>
-                <small>10:00 AM</small>
-                <br/>
-            </div>
-            <hr>
-            <div>
-                <span><b>Muhammed:</b></span>
-                <span>waalaikum salam warahmatullah wabarakatuhu</span>
-                <small>10:00 AM</small>
-                <br/>
-            </div>
-            <hr>
-            <div>
-                <span><b>Musa:</b></span>
-                <span>Good Morning bro</span>
-                <small>10:00 AM</small>
-                <br/>
-            </div>
-            <hr>
-            <div>
-                <span><b>Ali:</b></span>
-                <span>Morning,how are you?</span>
-                <small>10:00 AM</small>
-                <br/>
-            </div>
-            <hr>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>Chat</h1>
+      </header>
+
+      <main class="chat-content">
+        <!-- Sender -->
+        <article class="message sender">
+          <p class="text">Hi Aisha, how are you?</p>
+          <span class="time">9:58 AM</span>
+        </article>
+
+        <!-- Receiver -->
+        <article class="message receiver">
+          <p class="text">I’m doing well. How about you?</p>
+          <span class="time">10:00 AM</span>
+        </article>
+
+        <!-- Sender -->
+        <article class="message sender">
+          <p class="text">
+            Am also doing fine.I wanted to talk about the project update.
+          </p>
+          <span class="time">10:01 AM</span>
+        </article>
+
+        <!-- Receiver -->
+        <article class="message receiver">
+          <p class="text">Sure. i have few minutes.</p>
+          <span class="time">10:02 AM</span>
+        </article>
+
+        <!-- Sender -->
+        <article class="message sender">
+          <p class="text">
+            Great, i want to tell you that the project will be submitted by next
+            week.
+          </p>
+          <span class="time">10:03 AM</span>
+        </article>
+
+        <!-- Receiver -->
+        <article class="message receiver">
+          <p class="text">wow. That's great, am about to be done with mine.</p>
+          <span class="time">10:04 AM</span>
+        </article>
+
+        <!-- Sender -->
+        <article class="message sender">
+          <p class="text">
+            That’s all for now. i wii keep updating you on everything.
+          </p>
+          <span class="time">10:05 AM</span>
+        </article>
+
+        <!-- Receiver -->
+        <article class="message receiver">
+          <p class="text">
+            Okay, let’s talk later.Thank You So Much I Really Appreciate.
+          </p>
+          <span class="time">10:06 AM</span>
+        </article>
+      </main>
+
+      <footer class="chat-footer">
+        <input type="text" placeholder="Type a message..." />
+        <button>Send</button>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
